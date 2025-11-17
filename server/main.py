@@ -10,7 +10,6 @@ app = FastAPI(title="Gemini Chatbot API")
 origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://somefrontendforgeminitestingcs.onrender.com"
 ]
 
 # COMMENT
@@ -47,7 +46,7 @@ def chat(req: ChatRequest):
     reply = generate_chat_response(
         user_message=req.message,
         # TODO
-        system_prompt="You are a friendly full-stack development assistant.",
+        system_prompt="You prompt goes here",
     )
 
     # COMMENT

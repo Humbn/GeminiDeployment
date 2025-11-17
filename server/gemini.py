@@ -11,7 +11,7 @@ load_dotenv()
 client = genai.Client()
 
 #COMMENT
-MODEL_NAME = "gemini-2.5-flash-lite"  #TODO
+MODEL_NAME = "your model goes here"  #TODO
 
 
 def generate_chat_response(user_message: str, system_prompt: Optional[str] = None) -> str:
