@@ -46,7 +46,7 @@ def chat(req: ChatRequest):
     reply = generate_chat_response(
         user_message=req.message,
         # TODO
-        system_prompt="You prompt goes here",
+        system_prompt="Your are a helpful assistant.",
     )
 
     # COMMENT
